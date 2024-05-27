@@ -77,6 +77,6 @@ function logStart($logger, $message, $logLevel)
         $message['data']['worker'] = $host . ':' . $pid;
         $message['data']['queues'] = explode(',', $queues);
 
-        $logger->getInstance()->addInfo($message['message'], $message['data']);
+        $logger->getInstance()->info($message['message'], $message['data']);
     }
 }
